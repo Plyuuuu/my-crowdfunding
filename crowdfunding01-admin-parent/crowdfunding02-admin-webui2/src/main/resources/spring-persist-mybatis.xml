@@ -8,6 +8,7 @@
 
     <!-- 加载 jdbc.properties -->
     <context:property-placeholder location="classpath:jdbc.properties"/>
+
     <!-- 配置数据源 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <!-- 连接数据库的用户名 -->
