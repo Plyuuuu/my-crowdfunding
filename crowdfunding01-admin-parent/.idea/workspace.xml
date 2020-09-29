@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a95f9186-6042-4a07-b5ec-43690f3d4e38" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding01-admin-parent.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/resources/mybatis/mapper/AdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/resources/spring-persist-mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/test/java/github/veikkoroc/crowd/test/CrowdTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/target/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/target/classes/mybatis/mapper/AdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/target/classes/mybatis/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/target/classes/spring-persist-mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/target/test-classes/github/veikkoroc/crowd/test/CrowdTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding03-admin-component/crowdfunding03-admin-component.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding03-admin-component/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding03-admin-component/src/main/java/github/veikkoroc/crowd/mapper/AdminMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding03-admin-component/target/classes/github/veikkoroc/crowd/mapper/AdminMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding04-admin-entity/crowdfunding04-admin-entity.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding04-admin-entity/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding04-admin-entity/src/main/java/github/veikkoroc/crowd/entity/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding04-admin-entity/src/main/java/github/veikkoroc/crowd/entity/AdminExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding04-admin-entity/target/classes/github/veikkoroc/crowd/entity/Admin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding04-admin-entity/target/classes/github/veikkoroc/crowd/entity/AdminExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding04-admin-entity/target/classes/github/veikkoroc/crowd/entity/AdminExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding04-admin-entity/target/classes/github/veikkoroc/crowd/entity/AdminExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crowdfunding04-admin-entity/target/classes/github/veikkoroc/crowd/entity/AdminExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/crowdfunding02-admin-webui/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/crowdfunding02-admin-webui/mybatis/mapper/AdminMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/crowdfunding02-admin-webui/mybatis/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/crowdfunding02-admin-webui/spring-persist-mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/crowdfunding02-admin-webui/github/veikkoroc/crowd/test/CrowdTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crowdfunding05-common-util/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Maven_local_warehouse\maven_repository" />
+        <option name="mavenHome" value="I:/From Chrome/Maven/apache-maven-3.6.3-bin/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="I:\From Chrome\Maven\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="12" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="1iAMWFCSyEXlQyvJR8FUCJuuWxD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/resources/mybatis/mapper" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.12515645" />
+    <property name="project.structure.side.proportion" value="0.32521492" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Works of IT\IDEA_IU_Project\GitHub\my-crowdfunding\crowdfunding01-admin-parent\crowdfunding02-admin-webui2\src\main\resources\mybatis\mapper" />
+      <recent name="D:\Works of IT\IDEA_IU_Project\GitHub\my-crowdfunding\crowdfunding01-admin-parent\crowdfunding02-admin-webui2\src\main\resources\mybatis" />
+      <recent name="D:\Works of IT\IDEA_IU_Project\GitHub\my-crowdfunding\crowdfunding01-admin-parent\crowdfunding02-admin-webui2\src\main\resources" />
+      <recent name="D:\Works of IT\IDEA_IU_Project\GitHub\my-crowdfunding\crowdfunding01-admin-parent\crowdfunding02-admin-webui\src\main\resources\mybatis" />
+      <recent name="D:\Works of IT\IDEA_IU_Project\GitHub\my-crowdfunding\crowdfunding01-admin-parent\crowdfunding02-admin-webui\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Works of IT\IDEA_IU_Project\GitHub\my-crowdfunding\crowdfunding01-admin-parent\crowdfunding02-admin-webui\src\main\resources\mybatis\mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CrowdTest.testConnection">
+    <configuration name="CrowdTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="github.veikkoroc.crowd.test.CrowdTest" />
+      <module name="crowdfunding02-admin-webui" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.veikkoroc.crowd.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test01" />
+      <module name="crowdfunding02-admin-webui" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrowdTest.testConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crowdfunding02-admin-webui2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.veikkoroc.crowd.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="github.veikkoroc.crowd.test" />
+      <option name="MAIN_CLASS_NAME" value="github.veikkoroc.crowd.test.CrowdTest" />
+      <option name="METHOD_NAME" value="testConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mybatis-generator" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mybatis-generator:generate" />
+                <option value="-e" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/../crowdfunding06-common-reverse" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.test01" />
+      <item itemvalue="Application.CrowdTest" />
+      <item itemvalue="Maven.mybatis-generator" />
+      <item itemvalue="JUnit.CrowdTest.testConnection" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CrowdTest.testConnection" />
+        <item itemvalue="Application.CrowdTest" />
+        <item itemvalue="Application.test01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a95f9186-6042-4a07-b5ec-43690f3d4e38" name="Default Changelist" comment="" />
+      <created>1601345972430</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601345972430</updated>
+      <workItem from="1601345975616" duration="11381000" />
+      <workItem from="1601360307697" duration="1982000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="324" y="180" key="#Project_Structure" timestamp="1601358900656">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="324" y="180" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601358900656" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601350158559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601350158559" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601360566920">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601360566920" />
+    <state width="1877" height="227" key="GridCell.Tab.0.bottom" timestamp="1601361567662">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="227" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601361567662" />
+    <state width="1877" height="227" key="GridCell.Tab.0.center" timestamp="1601361567661">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="227" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601361567661" />
+    <state width="1877" height="227" key="GridCell.Tab.0.left" timestamp="1601361567661">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="227" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601361567661" />
+    <state width="1877" height="227" key="GridCell.Tab.0.right" timestamp="1601361567661">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="227" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601361567661" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1601358315048">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601358315048" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1601360620000">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601360620000" />
+    <state x="658" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1601358298149">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="658" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601358298149" />
+    <state x="478" y="217" key="new project wizard" timestamp="1601360707539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="478" y="217" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601360707539" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1601349715825">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601349715825" />
+  </component>
+</project>
