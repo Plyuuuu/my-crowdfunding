@@ -32,4 +32,16 @@
         </property>
     </bean>
 
+    <!--配置view-controller直接把请求地址和视图名称关联起来，不必写handler方法-->
+    <!--
+        @RequestMapping("/admin/to/login.page.html")
+        public String toLoginPage(){
+            return "admin-login";
+        }
+    -->
+    <mvc:view-controller path="/admin/to/login/page.html" view-name="admin-login"></mvc:view-controller>
+    <mvc:view-controller path="/admin/to/main/page.html" view-name="admin-main"></mvc:view-controller>
+
+
+
 </beans>

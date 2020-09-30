@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <!-- 配置ContextLoaderListener 加载Spring 配置文件-->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:spring-persist-*.xml</param-value>
+  </context-param>
+
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+
+  <!-- 配置CharacterEncodingFilter 解决POST 请求的字符乱码问题-->
+  <filter>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <!-- 指定字符集-->
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+    <!-- 强制请求进行编码-->
+    <init-param>
+      <param-name>forceRequestEncoding</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <!-- 强制响应进行编码-->
+    <init-param>
+      <param-name>forceResponseEncoding</param-name>
+      <param-value>true</param-value>
+    </init-param>
+  </filter>
+  <!--这个Filter执行要在其所有Filter的前面-->
+  <!--解决POST 请求的字符乱码问题。需要注意的是：在web.xml 中存在多个Filter
+        时，让这个Filter 作为过滤器链中的第一个Filter。
+        request.setCharacterEncoding(encoding) 要求必须在所有
+        request.getParameter(xxx)操作前面
+        response.setCharacterEncoding(encoding)要求必须在所有response.getWriter()
+        操作前面
+        不满足这个顺序要求字符集设定无法生效-->
+  <filter-mapping>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!--配置前端控制器DispatcherServlet-->
+  <servlet>
+    <servlet-name>springDispatcherServlet</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:spring-web-mvc.xml</param-value>
+    </init-param>
+    <!-- 让DispatcherServlet 在Web 应用启动时创建对象、初始化-->
+    <!-- 默认情况：Servlet 在第一次请求的时候创建对象、初始化-->
+    <!-- 设置load-on-startup就是为了让前端控制器在web启动时创建对象，初始化-->
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+
+    <servlet-name>springDispatcherServlet</servlet-name>
+    <!-- DispatcherServlet 映射的URL 地址-->
+    <!-- 大白话：什么样的访问地址会交给SpringMVC 来处理-->
+    <!-- 配置方式一：符合RESTFUL 风格使用“/” -->
+    <!-- <url-pattern>/</url-pattern> -->
+
+    <!-- 配置方式二：请求扩展名-->
+    <url-pattern>*.html</url-pattern>
+
+    <!--不配置会出现406   302:重定向 400:参数类型不匹配-->
+    <url-pattern>*.json</url-pattern>
+
+  </servlet-mapping>
+
+</web-app>

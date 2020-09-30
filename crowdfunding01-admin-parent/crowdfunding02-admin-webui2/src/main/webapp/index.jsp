@@ -18,7 +18,11 @@
     <base href="http://${pageContext.request.serverName}:${pageContext.request.serverPort}${pageContext.request.contextPath}/">
 
     <%--引入JQuery--%>
-    <script type="text/javascript" src="jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="resource/jquery/jquery-2.1.1.min.js"></script>
+
+    <%--引入Layer 基于JQuery 要放在其后面--%>
+    <script type="text/javascript" src="resource/layer/layer.js"></script>
+
     <%--JS代码 --%>
     <script type="text/javascript">
         $(function () {
@@ -143,6 +147,14 @@
 
             });
 
+            $("#btn5").click(function () {
+                /*浏览器自带的*/
+                /*alert("aaa...s");*/
+
+                layer.msg("Layer 的弹框 ");
+
+            });
+
         });
     </script>
 
@@ -168,6 +180,11 @@
     <br>
 
     <button id="btn4">Send Compose Object</button>
+
+    <br>
+    <br>
+
+    <button id="btn5">点我弹框</button>
 
 </body>
 </html>

@@ -112,5 +112,19 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+
+        <!--解决Intellij构建项目时，target/classes目录下不存在静态资源-->
+        <!--<resources>
+            <resource>
+                <directory>${basedir}/src/main/webapp</directory>
+                <includes>
+                    <include>/</include>
+                </includes>
+            </resource>
+        </resources>-->
+
     </build>
+
+
+
 </project>

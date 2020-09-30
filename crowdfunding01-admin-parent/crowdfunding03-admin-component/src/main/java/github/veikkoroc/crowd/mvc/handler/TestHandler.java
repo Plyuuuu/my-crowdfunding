@@ -4,6 +4,7 @@ import github.veikkoroc.crowd.entity.Admin;
 import github.veikkoroc.crowd.entity.ParamData;
 import github.veikkoroc.crowd.entity.Student;
 import github.veikkoroc.crowd.service.api.AdminService;
+import github.veikkoroc.crowd.util.CrowdUtil;
 import github.veikkoroc.crowd.util.ResultEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -29,13 +31,21 @@ public class TestHandler {
 
 
     @RequestMapping("/test/ssm.html")
-    public String testSsm(ModelMap modelMap){
+    public String testSsm(ModelMap modelMap, HttpServletRequest request){
+
+        //判断是否是ajax请求
+        boolean isAjax = CrowdUtil.judgeRequestType(request);
+        log.info("======================是ajax请求?:[{}]",isAjax);
 
         List<Admin> all = adminService.getAll();
 
         modelMap.addAttribute("adminList",all);
 
         System.out.println(10/0);
+
+        //创建空指针异常
+        //String a =null;
+        //System.err.println(a.length());
 
         return "target";
     }
@@ -102,7 +112,11 @@ public class TestHandler {
      */
     @ResponseBody
     @RequestMapping("/send/compose/object.json")
-    public ResultEntity<Student> testReceiveComposeObject(@RequestBody Student student){
+    public ResultEntity<Student> testReceiveComposeObject(@RequestBody Student student,HttpServletRequest request){
+        //判断是否是ajax请求
+        boolean isAjax = CrowdUtil.judgeRequestType(request);
+        log.info("======================是ajax请求?:[{}]",isAjax);
+
 
         System.err.println("Student:"+student);
 
