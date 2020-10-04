@@ -2,6 +2,8 @@ package github.veikkoroc.crowd.mvc.config;
 
 import com.google.gson.Gson;
 import github.veikkoroc.crowd.constant.CrowdConstant;
+import github.veikkoroc.crowd.exception.LoginAcctAlreadyInUserException;
+import github.veikkoroc.crowd.exception.LoginAcctAlreadyInUserForUpdateException;
 import github.veikkoroc.crowd.exception.LoginFailedException;
 import github.veikkoroc.crowd.util.CrowdUtil;
 import github.veikkoroc.crowd.util.ResultEntity;
@@ -166,6 +168,26 @@ public class CrowdExceptionResolver {
     public ModelAndView resolveLoginFailedException(LoginFailedException e,HttpServletRequest request,HttpServletResponse response) throws IOException {
 
         String viewName = "admin-login";
+
+
+        return commonResolve(viewName,e,request,response);
+
+    }
+
+    @ExceptionHandler(value = LoginAcctAlreadyInUserException.class)
+    public ModelAndView resolveLoginFailedException(LoginAcctAlreadyInUserException e,HttpServletRequest request,HttpServletResponse response) throws Exception {
+
+        String viewName = "admin-add";
+
+
+        return commonResolve(viewName,e,request,response);
+
+    }
+
+    @ExceptionHandler(value = LoginAcctAlreadyInUserForUpdateException.class)
+    public ModelAndView resolveLoginFailedException(LoginAcctAlreadyInUserForUpdateException e,HttpServletRequest request,HttpServletResponse response) throws Exception {
+
+        String viewName = "system-error";
 
 
         return commonResolve(viewName,e,request,response);

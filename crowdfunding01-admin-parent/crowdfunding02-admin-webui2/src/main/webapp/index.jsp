@@ -186,5 +186,8 @@
 
     <button id="btn5">点我弹框</button>
 
+    <br>
+    <br>
+    <a href="/webui2/admin/to/login/page.html">点击登录</a>
 </body>
 </html>

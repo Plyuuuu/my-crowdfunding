@@ -79,6 +79,12 @@ public class CrowdTest {
         System.err.println("受影响的行数:"+insert);
     }
 
+    @Test
+    public void testLimit(){
+        for (int i = 0; i < 217; i++) {
+            adminMapper.insert(new Admin(null,"Tom"+i,"123"+i,"汤姆"+i,"tom@qq.com"+i,null));
+        }
+    }
 
     @Test
     public void testConnection() throws SQLException {

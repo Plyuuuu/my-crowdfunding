@@ -1,5 +1,6 @@
 package github.veikkoroc.crowd.service.api;
 
+import com.github.pagehelper.PageInfo;
 import github.veikkoroc.crowd.entity.Admin;
 
 import java.util.List;
@@ -29,4 +30,33 @@ public interface AdminService {
      * @return
      */
     Admin getAdminByLoginAcct(String loginAcct, String userPswd);
+
+    /**
+     * 关键字查询的分页
+     * @param keyword
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
+    PageInfo<Admin> getPageInfo(String keyword,Integer pageNum,Integer pageSize);
+
+    /**
+     * 删除管理员
+     * @param adminId
+     * @return
+     */
+    int remove(Integer adminId);
+
+    /**
+     * 通过id查询admin
+     * @param adminId
+     * @return
+     */
+    Admin getAdminById(Integer adminId);
+
+    /**
+     * 更新Admin
+     * @param admin
+     */
+    void updateAdmin(Admin admin);
 }

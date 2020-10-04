@@ -1,15 +1,24 @@
 package github.veikkoroc.crowd.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import github.veikkoroc.crowd.constant.CrowdConstant;
 import github.veikkoroc.crowd.entity.Admin;
 import github.veikkoroc.crowd.entity.AdminExample;
+import github.veikkoroc.crowd.exception.LoginAcctAlreadyInUserException;
+import github.veikkoroc.crowd.exception.LoginAcctAlreadyInUserForUpdateException;
 import github.veikkoroc.crowd.exception.LoginFailedException;
 import github.veikkoroc.crowd.mapper.AdminMapper;
 import github.veikkoroc.crowd.service.api.AdminService;
 import github.veikkoroc.crowd.util.CrowdUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
 
+import javax.xml.crypto.Data;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -18,6 +27,7 @@ import java.util.Objects;
  * @version 1.0
  * @date 2020/9/29 16:10
  */
+@Slf4j
 @Service(value = "adminServiceImpl")
 public class AdminServiceImpl implements AdminService {
 
@@ -26,7 +36,29 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public void saveAdmin(Admin admin) {
-        adminMapper.insert(admin);
+        //1、密码加密
+        String userPswd = admin.getUserPswd();
+        userPswd = CrowdUtil.md5(userPswd);
+        admin.setUserPswd(userPswd);
+
+        //2、生成创建时间
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String cruTime = simpleDateFormat.format(date);
+        admin.setCreateTime(cruTime);
+
+        //执行保存
+        try{
+            adminMapper.insert(admin);
+        }catch (Exception e){
+            e.printStackTrace();
+            log.info("=====================异常全类名:[{}]",e.getClass().getName());
+
+            if (e instanceof DuplicateKeyException){
+                throw new LoginAcctAlreadyInUserException(CrowdConstant.MESSAGE_LOGIN_ALREADY_IN_USE);
+            }
+        }
+
     }
 
     @Override
@@ -88,5 +120,47 @@ public class AdminServiceImpl implements AdminService {
         // 8、如果一直则返回Admin对象
 
         return admin;
+    }
+
+    @Override
+    public PageInfo<Admin> getPageInfo(String keyword, Integer pageNum, Integer pageSize) {
+
+        // 1.调用PageHelper的静态方法开启分页功能
+        PageHelper.startPage(pageNum,pageSize);
+
+        // 2.执行查询
+        List<Admin> list = adminMapper.selectAdminByKeyword(keyword);
+
+        // 3.封装到PageInfo对象中
+        return new PageInfo<>(list);
+    }
+
+    @Override
+    public int remove(Integer adminId) {
+        int res = adminMapper.deleteByPrimaryKey(adminId);
+        return res;
+    }
+
+    @Override
+    public Admin getAdminById(Integer adminId) {
+        Admin admin = adminMapper.selectByPrimaryKey(adminId);
+        return admin;
+    }
+
+    @Override
+    public void updateAdmin(Admin admin) {
+        // updateByPrimaryKeySelective表示有选择的更新，对null不更新
+        try{
+            adminMapper.updateByPrimaryKeySelective(admin);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            log.info("=====================异常全类名:[{}]",e.getClass().getName());
+
+            if (e instanceof DuplicateKeyException){
+                throw new LoginAcctAlreadyInUserForUpdateException(CrowdConstant.MESSAGE_LOGIN_ALREADY_IN_USE);
+            }
+        }
+
     }
 }
