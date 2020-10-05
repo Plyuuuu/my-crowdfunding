@@ -30,10 +30,11 @@
 
     <script type="text/javascript">
         $(function () {
-            $("button").click(function () {
+            $("#backBtn").click(function () {
                 //相当于浏览器后退按钮
                 window.history.back();
             });
+
         });
     </script>
     <style>
@@ -44,7 +45,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <div><a class="navbar-brand" href="index.html" style="font-size:32px;">尚筹网-创意产品众筹平台</a></div>
+            <div><a class="navbar-brand" href="index.html" style="font-size:32px;">筑梦网-帮助你实现梦想的平台</a></div>
         </div>
     </div>
 </nav>
@@ -60,7 +61,8 @@
     --%>
     <h3>${requestScope.exception.message}</h3>
 
-    <button style="width: 150px ; height: 50px" class="btn btn-lg btn-success btn-block">返回上一步</button>
+    <button id="backBtn" style="width: 150px ; height: 50px" class="btn btn-lg btn-success btn-block">返回上一步</button><br><br>
+    <button id="toLoginPageBtn" style="width: 150px ; height: 50px" class="btn btn-lg btn-success btn-block"><a href="admin/to/login/page.html">前往登录</a></button>
 </div>
 
 </body>

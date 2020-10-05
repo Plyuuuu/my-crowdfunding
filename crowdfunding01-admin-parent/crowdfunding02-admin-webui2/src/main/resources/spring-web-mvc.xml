@@ -43,6 +43,10 @@
     <mvc:view-controller path="/admin/to/main/page.html" view-name="admin-main"></mvc:view-controller>
     <mvc:view-controller path="/admin/to/add/page.html" view-name="admin-add"></mvc:view-controller>
 
+    <mvc:view-controller path="/to/test/ajax.html" view-name="test/ajax-test"></mvc:view-controller>
+
+    <mvc:view-controller path="/role/to/page.html" view-name="pages/role/role-page"></mvc:view-controller>
+
     <!--注册拦截器-->
     <mvc:interceptors>
         <mvc:interceptor>
@@ -55,8 +59,7 @@
             <!--不拦截的资源-->
             <mvc:exclude-mapping path="/admin/to/login/page.html"/>
             <mvc:exclude-mapping path="/admin/do/login.html"/>
-            <mvc:exclude-mapping path="/admin/do/logout.html
-"/>
+            <mvc:exclude-mapping path="/admin/do/logout.html"/>
 
             <!--拦截执行方法-->
             <bean class="github.veikkoroc.crowd.mvc.interceptor.LoginInterceptor"></bean>

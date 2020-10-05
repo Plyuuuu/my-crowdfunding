@@ -1,7 +1,9 @@
 package github.veikkoroc.crowd.test;
 
 import github.veikkoroc.crowd.entity.Admin;
+import github.veikkoroc.crowd.entity.role.Role;
 import github.veikkoroc.crowd.mapper.AdminMapper;
+import github.veikkoroc.crowd.mapper.RoleMapper;
 import github.veikkoroc.crowd.service.api.AdminService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -37,6 +39,17 @@ public class CrowdTest {
 
     @Autowired
     private AdminService adminService;
+
+    @Autowired
+    private RoleMapper roleMapper;
+
+    @Test
+    public void testRoleMapper(){
+        for (int i = 0; i < 271; i++) {
+            Role role = new Role(null, "Role"+i);
+            roleMapper.insert(role);
+        }
+    }
 
     @Test
     public void testTx(){

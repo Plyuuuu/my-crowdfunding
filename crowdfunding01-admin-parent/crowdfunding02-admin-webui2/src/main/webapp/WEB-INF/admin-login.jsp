@@ -35,7 +35,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <div><a class="navbar-brand" href="index.html" style="font-size:32px;">尚筹网-创意产品众筹平台</a></div>
+            <div><a class="navbar-brand" href="index.html" style="font-size:32px;">筑梦网-实现梦想的平台</a></div>
         </div>
     </div>
 </nav>

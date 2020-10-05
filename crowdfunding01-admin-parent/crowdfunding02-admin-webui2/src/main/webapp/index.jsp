@@ -189,5 +189,8 @@
     <br>
     <br>
     <a href="/webui2/admin/to/login/page.html">点击登录</a>
+    <br>
+    <br>
+    <a href="/webui2/to/test/ajax.html">测试Ajax异步</a>
 </body>
 </html>

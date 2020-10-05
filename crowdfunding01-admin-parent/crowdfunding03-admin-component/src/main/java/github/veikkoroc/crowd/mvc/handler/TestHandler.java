@@ -123,5 +123,20 @@ public class TestHandler {
         return ResultEntity.successWithData(student);
     }
 
+    /**
+     * 测试ajax异步请求
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping("/test/ajax/async.html")
+    public String TestAjax(){
 
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        return "Success!";
+    }
 }
