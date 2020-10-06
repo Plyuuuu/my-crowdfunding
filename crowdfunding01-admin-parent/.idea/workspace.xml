@@ -7,24 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a95f9186-6042-4a07-b5ec-43690f3d4e38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/webapp/WEB-INF/common/model/role/modal-role-edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/webapp/WEB-INF/common/model/role/model-role-add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/webapp/WEB-INF/common/model/role/model-role-confirm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crowdfunding03-admin-component/src/test/java/github/veikkoroc/test/RoleServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/webapp/WEB-INF/pages/role/role-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/webapp/WEB-INF/pages/role/role-page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/webapp/resource/myjs/my-role.js" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/main/webapp/resource/myjs/my-role.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/test/java/github/veikkoroc/crowd/test/CrowdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/test/java/github/veikkoroc/crowd/test/CrowdTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding02-admin-webui2/target/crowdfunding02-admin-webui2.war" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/target/crowdfunding02-admin-webui2.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding02-admin-webui2/target/crowdfunding02-admin-webui2/WEB-INF/lib/crowdfunding03-admin-component-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/target/crowdfunding02-admin-webui2/WEB-INF/lib/crowdfunding03-admin-component-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding02-admin-webui2/target/crowdfunding02-admin-webui2/WEB-INF/pages/role/role-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/target/crowdfunding02-admin-webui2/WEB-INF/pages/role/role-page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding02-admin-webui2/target/crowdfunding02-admin-webui2/resource/myjs/my-role.js" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/target/crowdfunding02-admin-webui2/resource/myjs/my-role.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding03-admin-component/src/main/java/github/veikkoroc/crowd/mvc/handler/RoleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding03-admin-component/src/main/java/github/veikkoroc/crowd/mvc/handler/RoleHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding03-admin-component/src/main/java/github/veikkoroc/crowd/service/api/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding03-admin-component/src/main/java/github/veikkoroc/crowd/service/api/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding03-admin-component/src/main/java/github/veikkoroc/crowd/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding03-admin-component/src/main/java/github/veikkoroc/crowd/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding03-admin-component/target/classes/github/veikkoroc/crowd/mvc/handler/RoleHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding03-admin-component/target/classes/github/veikkoroc/crowd/mvc/handler/RoleHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding03-admin-component/target/classes/github/veikkoroc/crowd/service/api/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding03-admin-component/target/classes/github/veikkoroc/crowd/service/api/RoleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crowdfunding03-admin-component/target/classes/github/veikkoroc/crowd/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding03-admin-component/target/classes/github/veikkoroc/crowd/service/impl/RoleServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -342,11 +325,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -380,6 +358,7 @@
       <workItem from="1601924118703" duration="188000" />
       <workItem from="1601952407782" duration="10290000" />
       <workItem from="1601966098579" duration="10384000" />
+      <workItem from="1601994415195" duration="277000" />
     </task>
     <task id="LOCAL-00001" summary="fist commit">
       <created>1601362378746</created>
@@ -451,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601909540959</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Complete the Role maintenance function">
+      <created>1601994479999</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601994479999</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,10 +470,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601440036814" />
-    <state x="214" y="111" key="CommitChangelistDialog2" timestamp="1601909528359">
+    <state x="214" y="111" key="CommitChangelistDialog2" timestamp="1601994467095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="214" y="111" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601909528359" />
+    <state x="214" y="111" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601994467095" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601440025059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -576,10 +562,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601455545501" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601909551305">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601994528629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601909551305" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601994528629" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1601439780069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
