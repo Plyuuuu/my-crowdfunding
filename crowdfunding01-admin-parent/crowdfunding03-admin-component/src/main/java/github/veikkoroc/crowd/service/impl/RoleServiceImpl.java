@@ -3,6 +3,7 @@ package github.veikkoroc.crowd.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import github.veikkoroc.crowd.entity.role.Role;
+import github.veikkoroc.crowd.entity.role.RoleExample;
 import github.veikkoroc.crowd.mapper.RoleMapper;
 import github.veikkoroc.crowd.service.api.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,5 +41,27 @@ public class RoleServiceImpl implements RoleService {
         // 3、封装为PageInfo对象返回
 
         return new PageInfo<>(roles);
+    }
+
+    @Override
+    public void saveRole(Role role) {
+        roleMapper.insert(role);
+    }
+
+    @Override
+    public void updateRole(Role role) {
+        roleMapper.updateByPrimaryKey(role);
+    }
+
+    @Override
+    public void removeRole(List<Integer> roleIdList) {
+
+        RoleExample example = new RoleExample();
+        RoleExample.Criteria criteria = example.createCriteria();
+        //delete from t_role where id in (1,2,3,4);
+        criteria.andIdIn(roleIdList);
+
+        roleMapper.deleteByExample(example);
+
     }
 }

@@ -1,4 +1,57 @@
 
+// 声明专门的函数显示确认的模态框
+function showConfirmModal(roleArray) {
+
+    //打开，模态框
+    $("#confirmModal").modal("show");
+
+    //清除旧数据
+    $("#roleNameDiv").empty();
+
+    // 全局变量存放角色id
+    window.roleIdArray = [];
+
+    // 遍历roleArray
+    for (var i =0;i<roleArray.length;i++){
+        var role = roleArray[i];
+        var roleName = role.roleName;
+        $("#roleNameDiv").append(roleName+"&nbsp;");
+
+        var roleId = role.roleId;
+
+        window.roleIdArray.push(roleId);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //生成页面效果,如何时时候调用这个函数都会重新加载页面
 function generatePage() {
     // 1、获取分页数据
@@ -63,7 +116,7 @@ function fillTableBody(pageInfo) {
     //清除tbody中旧的内容
     $("#rolePageBody").empty();
     // 为了搜索没有结果时不显示页码
-   // $("#Pagination").empty();
+    $("#Pagination").empty();
 
     //判断pageInfo对象是否有效
     if(pageInfo==null || pageInfo==undefined || pageInfo.list == null || pageInfo.list.length==0){
@@ -78,13 +131,16 @@ function fillTableBody(pageInfo) {
         var roleName = role.name;
 
         var numberTd = "<td>"+(i+1)+"</td>";
-        var checkboxTd = "<td><input type='checkbox'></td>";
+        var checkboxTd = "<td><input id='" + roleId + "' class='itemBox' type='checkbox'></td>";
         var roleNameTd = "<td>"+roleName+"</td>";
 
+
+        var checkBtn = "<button id='"+roleId+"' type='button' class='btn btn-success btn-xs checkBtn'><i class=' glyphicon glyphicon-check'></i></button>";
+
         // 通过button标签的id属性把roleId值传递到button按钮的单击响应函数中
-        var checkBtn = "<button type='button' class='btn btn-success btn-xs checkBtn'><i class=' glyphicon glyphicon-check'></i></button>";
-        var pencilBtn = "<button type='button' class='btn btn-primary btn-xs pencilBtn'><i class='glyphicon glyphicon-pencil'></i></button>";
-        var removeBtn = "<button type='button' class='btn btn-danger btn-xs removeBtn'><i class='glyphicon glyphicon-remove'></i></button>";
+        var pencilBtn = "<button id='"+roleId+"' type='button' class='btn btn-primary btn-xs pencilBtn'><i class='glyphicon glyphicon-pencil'></i></button>";
+
+        var removeBtn = "<button id='"+roleId+"' type='button' class='btn btn-danger btn-xs removeBtn'><i class='glyphicon glyphicon-remove'></i></button>";
         var buttonTd = "<td>" + checkBtn + " " + pencilBtn + " " + removeBtn + "</td>";
         var tr = "<tr>" + numberTd + checkboxTd + roleNameTd + buttonTd + "</tr>";
 

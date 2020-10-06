@@ -5,6 +5,7 @@ import github.veikkoroc.crowd.entity.role.Role;
 import github.veikkoroc.crowd.mapper.AdminMapper;
 import github.veikkoroc.crowd.mapper.RoleMapper;
 import github.veikkoroc.crowd.service.api.AdminService;
+import github.veikkoroc.crowd.service.api.RoleService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -16,6 +17,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Veikko Roc
@@ -42,6 +45,20 @@ public class CrowdTest {
 
     @Autowired
     private RoleMapper roleMapper;
+
+    @Autowired
+    private RoleService roleService;
+
+    @Test
+    public void testRoleService(){
+        //roleService.saveRole(new Role(null,"迪丽热巴"));
+        // 测试批量删除
+        List<Integer> list = new ArrayList<>();
+        list.add(2);
+        list.add(3);
+        roleService.removeRole(list);
+
+    }
 
     @Test
     public void testRoleMapper(){
