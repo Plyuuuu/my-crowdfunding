@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a95f9186-6042-4a07-b5ec-43690f3d4e38" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/test/java/github/veikkoroc/crowd/test/CrowdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/test/java/github/veikkoroc/crowd/test/CrowdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -358,7 +358,7 @@
       <workItem from="1601924118703" duration="188000" />
       <workItem from="1601952407782" duration="10290000" />
       <workItem from="1601966098579" duration="10384000" />
-      <workItem from="1601994415195" duration="3185000" />
+      <workItem from="1601994415195" duration="3742000" />
     </task>
     <task id="LOCAL-00001" summary="fist commit">
       <created>1601362378746</created>
@@ -451,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601995559749</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Complete the Role maintenance function..">
+      <created>1601998542121</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1601998542121</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,9 +472,14 @@
     <MESSAGE value="Complete the Admin maintenance function" />
     <MESSAGE value="Complete the Role maintenance function" />
     <MESSAGE value="Complete the Role maintenance function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete the Role maintenance function." />
+    <MESSAGE value="Complete the Role maintenance function.." />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete the Role maintenance function.." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Notifications" timestamp="1601998629440">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601998629440" />
     <state x="324" y="180" key="#Project_Structure" timestamp="1601469174183">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -485,10 +497,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601440036814" />
-    <state x="214" y="111" key="CommitChangelistDialog2" timestamp="1601995554351">
+    <state x="214" y="111" key="CommitChangelistDialog2" timestamp="1601998539329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="214" y="111" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601995554351" />
+    <state x="214" y="111" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601998539329" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601440025059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -573,14 +585,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601358315048" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1601995531688">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1601998693237">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601995531688" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601997388538">
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601998693237" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601998574543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601997388538" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601998574543" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1601439780069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
