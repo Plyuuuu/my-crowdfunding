@@ -51,8 +51,10 @@ public class CrowdTest {
 
     @Test
     public void testRoleService(){
+
         //roleService.saveRole(new Role(null,"迪丽热巴"));
-        // 测试批量删除
+
+        // 测试批量删 除
         List<Integer> list = new ArrayList<>();
         list.add(2);
         list.add(3);

@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a95f9186-6042-4a07-b5ec-43690f3d4e38" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/test/java/github/veikkoroc/crowd/test/CrowdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/crowdfunding02-admin-webui2/src/test/java/github/veikkoroc/crowd/test/CrowdTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -358,7 +358,7 @@
       <workItem from="1601924118703" duration="188000" />
       <workItem from="1601952407782" duration="10290000" />
       <workItem from="1601966098579" duration="10384000" />
-      <workItem from="1601994415195" duration="2401000" />
+      <workItem from="1601994415195" duration="3185000" />
     </task>
     <task id="LOCAL-00001" summary="fist commit">
       <created>1601362378746</created>
